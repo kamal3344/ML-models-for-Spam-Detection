@@ -1,7 +1,7 @@
 <h3> Spam_detector using LSTM_RNN and Bidirectional_LSTM_RNN</h3>
 Bidirectional LSTM
 
-img src = 'ML-models-for-Spam-detection/images/1.png'
+<img src="/ML-models-for-Spam-detection/images/1.png" width="700" height="400">
 
 Spam - whether in the form of emails, messages, etc. - is a nuisance. Thanks to deep learning algorithms, the problem is now well under control. Here I show with a Recurrent Neural Network (RNN) model how fast and uncomplicated a model can be calculated that can distinguish spam from non-spam. The used dataset is the "SMS Spam Collection", which can be found at Kaggle under "https://www.kaggle.com/ishansoni/sms-spam-collection-dataset".
 
