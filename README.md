@@ -1,5 +1,5 @@
-<h3> Spam_detector using LSTM_RNN and Bidirectional_LSTM_RNN</h3>
-Bidirectional LSTM
+<h3> Spam_detector using ML Models </h3>
+
 
 <img src="/images/1.png" width="700" height="400">
 
@@ -42,25 +42,34 @@ Spam - whether in the form of emails, messages, etc. - is a nuisance. Thanks to 
 
  Plus, The data loader should sort the batch by each sequence's length and returns the longest one first in the batch to use torch's pack_padded_sequence() (you will see this     function in model code)
  
-<h3>  Structure the model </h3>
-       
-        1 . Embedding
-        2 . Pack the sequences (get rid of paddings)
-        3 . LSTM
-        4 . Unpack the sequences (recover paddings)
-        5 . Fully Connected Layer
-        6 . Sigmoid Activation
- 
-<h3>  Embedding </h3>
-According to Tensorflow.org's documentation, "word embeddings are a representation of the semantics of a word"
- 
 <hr> 
-<h3> Use of pack_padded_sequence() </h3>
-Please recall that we added padding(0)s to sequences. Since sequences have different lengths, it is required to add paddings into shorter sequences to match the dimension in     tensor. The problem is that model should not be trained on padding values. pack_padded_sequence() will get rid of paddings in the batch of data and re-organized it
+Using SVM = Train Accuracy_score = 0.9820877084620135  Test Accuracy_score = 0.921865154379332 
 
+<img src="/images/2.png" width="700" height="400">
  
 <hr>
  
+Using Naive Bayes = Train Accuracy_score = 0.9163063619518221  Test Accuracy_score = 0.8216761184625079 
 
+<img src="/images/3.png" width="700" height="400">
+ 
+<hr>
+ 
+Using Logistic Regression = Train Accuracy_score = 0.9879555281037677  Test Accuracy_score = 0.9464398235664776 
+
+<img src="/images/4.jfif" width="700" height="400">
+ 
+<hr>
+ 
+Using random Forest = Train Accuracy_score = 0.9984558369363805  Test Accuracy_score = 0.926591052299937 
+ 
+<img src="/images/5.png" width="700" height="400">
+<hr>
+ 
+Using Decision Tree = Train Accuracy_score = 0.9984558369363805  Test Accuracy_score = 0.9117832388153749 
+
+<img src="/images/6.png" width="700" height="400">
+
+ <hr>
  
  <h3> Project URL : https://email-spam-1.herokuapp.com/ </h3>
