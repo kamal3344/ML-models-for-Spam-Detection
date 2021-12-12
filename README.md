@@ -66,7 +66,7 @@ Using random Forest = Train Accuracy_score = 0.9984558369363805  Test Accuracy_s
  
 Using Decision Tree = Train Accuracy_score = 0.9984558369363805  Test Accuracy_score = 0.9117832388153749 
 
-<img src="/images/6.png" width="700" height="400">
+<img src="/images/6.PNG" width="700" height="400">
 
  <hr>
  
