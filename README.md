@@ -1,7 +1,5 @@
-<h3> Spam_detector using ML Models </h3>
-
-
-<img src="/images/1.png" width="700" height="400">
+<h3> <font color = 'red'> Spam_detector using ML Models </fonot> </h3>
+<hr>
 
 Spam - whether in the form of emails, messages, etc. - is a nuisance. Thanks to deep learning algorithms, the problem is now well under control. Here I show with a Recurrent Neural Network (RNN) model how fast and uncomplicated a model can be calculated that can distinguish spam from non-spam. The used dataset is the "SMS Spam Collection", which can be found at Kaggle under "https://www.kaggle.com/ishansoni/sms-spam-collection-dataset".
 
