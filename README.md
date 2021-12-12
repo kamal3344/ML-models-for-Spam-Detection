@@ -42,7 +42,7 @@ Spam - whether in the form of emails, messages, etc. - is a nuisance. Thanks to 
 
  Plus, The data loader should sort the batch by each sequence's length and returns the longest one first in the batch to use torch's pack_padded_sequence() (you will see this     function in model code)
  
- <h3>   Structure the model </h3>
+<h3>  Structure the model </h3>
        
         1 . Embedding
         2 . Pack the sequences (get rid of paddings)
@@ -51,17 +51,16 @@ Spam - whether in the form of emails, messages, etc. - is a nuisance. Thanks to 
         5 . Fully Connected Layer
         6 . Sigmoid Activation
  
-
- <h3>  Embedding </h3>
+<h3>  Embedding </h3>
 According to Tensorflow.org's documentation, "word embeddings are a representation of the semantics of a word"
  
 <br> 
 <h3> Use of pack_padded_sequence() </h3>
-  Please recall that we added padding(0)s to sequences. Since sequences have different lengths, it is required to add paddings into shorter sequences to match the dimension in     tensor. The problem is that model should not be trained on padding values. pack_padded_sequence() will get rid of paddings in the batch of data and re-organized it
+Please recall that we added padding(0)s to sequences. Since sequences have different lengths, it is required to add paddings into shorter sequences to match the dimension in     tensor. The problem is that model should not be trained on padding values. pack_padded_sequence() will get rid of paddings in the batch of data and re-organized it
 
  
 <br>
  
 
  
-Project URL : https://email-spam-1.herokuapp.com/
+ <h3> Project URL : https://email-spam-1.herokuapp.com/ </h3>
